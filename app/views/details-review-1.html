@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Review details
+      </h1>
+
+      <p>info</p>
+
+      <div class="form-group">
+          <a href="/approval-submitted">
+      	     <input class="button" type="submit" value="Request approval">
+    		  </a>  
+  	    <p class="cancel-link"><a href="/set-up-payment">Delete this draft</a></p>
+  	    <p class="cancel-link"><a href="/set-up-payment">Preview what your users will see</a></p>
+  	    <p class="cancel-link"><a href="/set-up-payment">View documentation</a></p>
+  	   </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
