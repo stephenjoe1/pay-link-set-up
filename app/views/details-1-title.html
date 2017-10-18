@@ -1,51 +1,54 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+GOV.UK prototype kit
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
-  <div class="grid-row">
-  	<div class="column-full">
-      <h1 class="heading-large">
-        Payment landing page
-      </h1>
-      <p class="lede">This is the page your user will see when they go to the payment page link.</p>
-   	</div>
-      <div class="column-two-thirds remove-left-margin">
-		<form action="payment-title" class="form">
-	        <div class="form-group">
-	          <label class="form-label-bold" for="email">
-	            Payment page title
+    <div class="grid-row">
+        <div class="column-full">
+            <h1 class="heading-large">
+                Payment landing page
+            </h1>
+
+            <p class="lede">This is the page your user will see when they go to the payment page link.</p>
+        </div>
+        <div class="column-two-thirds remove-left-margin">
+            <form action="/details-2-URL-playback" class="form" method="post">
+                <div class="form-group">
+                    <label class="form-label-bold" for="payment-title">
+                        Payment page title
 	            <span class="form-hint">
 	             This describes what the user is paying for. It will also appear in the URL you give to users.
 	            </span>
-	          </label>
-	          <input type="text" class="form-control" id="payment-title" style="width: 100%;">
-	        </div>
-	    </form>
+                    </label>
+                    <input name="payment-title" type="text" class="form-control" id="payment-title"
+                           style="width: 100%;" value="{{ data['payment-title'] }}">
+                </div>
 
-	    <div class="form-group">
-              <label class="form-label-bold" for="your-message">
-                Contextual information
+                <div class="form-group">
+                    <label class="form-label-bold" for="payment-context">
+                        Contextual information
                 <span class="form-hint">
 	              This information explains in more detail what the user is paying for. It will appear under the page title.
 	            </span>
-              </label>
-              <textarea class="form-control" name="textarea" id="textarea" style="width: 100%;" rows="5"></textarea>
-            </div>
+                    </label>
+                    <textarea class="form-control" name="payment-context" id="payment-context" style="width: 100%;"
+                              rows="5">{{ data['payment-context'] }}</textarea>
+                </div>
 
-	<div class="form-group">
-      	<a href="/details-2-URL-playback">
-    	<input class="button" type="submit" value="Continue">
-  		</a>  
-	    <p class="cancel-link"><a href="/set-up-payment">Cancel</a></p>
-	</div>
-	</div>
+                <div class="form-group">
+                    <a href="/details-2-URL-playback">
+                        <input class="button" type="submit" value="Continue">
+                    </a>
 
-   </div>
+                    <p class="cancel-link"><a href="/set-up-payment">Cancel</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </main>
 
 {% endblock %}

@@ -14,7 +14,7 @@
         This will be the URL
       </h1>
       <div class="panel panel-border-wide">
-        <p class="lede">www.gov.uk/pay/pay-for-fishing-licence</p>
+        <p class="lede">www.gov.uk/pay/{{ data['payment-title'] | replace(" ", "-") | lower }}</p>
       </div>
       <p>You can change the URL by editing the payment title on the previous page.</p>
 
