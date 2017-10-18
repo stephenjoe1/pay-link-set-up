@@ -15,7 +15,7 @@
         Payment links
       </h1>
 
-      <p class="lede">Take online payments for non-digital services. Create a payment link that you can use on application forms.</p>
+      <p class="lede">Take online payments for non-digital services. Create a payment link that you can use on application forms, or websites where forms are downloaded.</p>
 
         <div class="form-group">
             <a href="/details-1-title">
@@ -33,10 +33,18 @@
       <h2 class="heading-medium">You have 1 draft</h2>
         <div class="review-section">
           <h3 class="heading-medium">Pay for {{ data['payment-title'] }}</h3>
-          
-          <div class="panel panel-border-wide">
-            <p class="bold-small">This is in draft mode. <a href="/approval-submitted">Request approval to go live</a>.</p>
-          </div>
+          <form action="/approval-submitted" method="post">
+              <input type="hidden" name="sent-for-approval" value="true">
+              <div class="panel panel-border-wide">
+                  <p class="bold-small">This is in draft mode.
+                      {% if data['sent-for-approval'] == 'true' %}
+                      <a href="">Cancel request.</a>
+                      {% else %}
+                      <input class="link" type="submit" value="Request approval to go live">
+                      {% endif %}
+                  </p>
+              </div>
+          </form>
      
             <p class="cancel-link"><a href="#">Preview what your users will see</a></p>
             <p class="cancel-link"><a href="/details-review-1">View and edit draft</a></p>
