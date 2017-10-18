@@ -10,13 +10,31 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-large">
-        How would you like to charge your users?
-      </h1>
+        <form>
+          <div class="form-group">
+            <fieldset>
+             <legend>
+                <h1 class="heading-medium">
+                  What fee type would you like to charge your users?
+                </h1>
+              </legend>
 
-      <p>info</p>
+              <div class="multiple-choice" data-target="contact-by-email">
+                <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+                <label for="example-contact-by-email">Fixed fee</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+                <label class="form-label" for="contact-email">How much is the fee?</label>
+                <input class="form-control" name="contact-email" type="text" id="contact-email">
+              </div>
 
-
+              <div class="multiple-choice" data-target="contact-by-phone">
+                <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+                <label for="example-contact-by-phone">Variable fee</label>
+              </div>
+            </fieldset>
+          </div>
+        </form>
 
       <div class="form-group">
           <a href="/details-4-additional-info">
