@@ -1,81 +1,81 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-GOV.UK prototype kit
+  GOV.UK prototype kit
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
-    <div class="grid-row">
-        <div class="column-full">
+  <div class="grid-row">
+    <div class="column-two-thirds">
 
-            <h1 class="heading-large">
-                Review details
-            </h1>
+      <h1 class="heading-large">
+        Review your payment link page details
+      </h1>
 
-            <table class="bottom-space">
-                <tbody>
-                <tr>
-                    <th scope="row"></th>
-                    <td class="numeric"></td>
-                    <td><a href=""></a></td>
-                </tr>
-                <tr>
-                    <th scope="row">Payment landing page title</th>
-                    <td>{{ data['payment-title'] }}</td>
-                    <td><a href="/details-1-title">Change</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">Payment landing page extra info</th>
-                    <td>{{ data['payment-context'] }}</td>
-                    <td><a href="/details-1-title">Change</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">URL</th>
-                    <td>www.gov.uk/pay/{{ data['payment-title'] | replace(" ", "-") | lower }}</td>
-                    <td>You'll need to amend the payment landing page title to change the URL</td>
-                </tr>
-                <tr>
-                    <th scope="row">Cost</th>
-                    <td>
-                        {% if data['charge-type'] == 'Fixed' %} {{ data['charge-type'] }} {% endif %}
-                        {% if data['charge-type'] == 'Variable' %}Variable fee{% endif %}
-                    </td>
-                    <td><a href="/details-3-cost">Change</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">Additional info</th>
-                    <td>
-                        <ul class="list list-bullet">
-                            <li>{% if data['additional-info-email'] == 'email' %}Applicant email address{% endif %}</li>
-                            <li>{% if data['additional-info-name'] == 'name' %}Applicant name{% endif %}</li>
-                            <li>{% if data['additional-info-number'] == 'number' %}Applicant phone number{% endif %}</li>
-                        </ul>
-                    </td>
-                    <td><a href="/details-4-additional-info">Change</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">Payment options</th>
-                    <td>
-                        <ul class="list list-bullet">
-                            <li>{% if data['card-type'] == 'credit-debit' %}Credit and Debit card{% endif %}</li>
-                            <li>{% if data['direct-debit'] == 'direct-debit' %}Direct debit{% endif %}</li>
-                        </ul>
-                    </td>
-                    <td><a href="/details-5-payment-options">Change</a></td>
-                </tr>
-                </tbody>
-            </table>
+      <table class="bottom-space">
+        <tbody>
+         <tr>
+            <th scope="row"></th>
+            <td class="numeric"></td>
+            <td><a href=""></a></td>
+          </tr>
+          <tr>
+            <th scope="row">Title</th>
+            <td>{{ data['payment-title'] }}</td>
+            <td><a href="/details-1-title">Change</a></td>
+          </tr>
+          <tr>
+            <th scope="row">More details</th>
+            <td>{{ data['payment-context'] }}</td>
+            <td><a href="/details-1-title">Change</a></td>
+          </tr>
+          <tr>
+            <th scope="row">URL</th>
+            <td>www.gov.uk/pay/{{ data['payment-title'] | replace(" ", "-") | lower }}</td>
+            <td>You'll need to amend the payment landing page title to change the URL</td>
+          </tr>
+          <tr>
+            <th scope="row">Fee</th>
+            <td>{% if data['charge-type'] == 'Fixed' %} {{ data['charge-type'] }} {% endif %}
+                {% if data['charge-type'] == 'Variable' %}Variable fee{% endif %}</td>
+            <td><a href="/details-3-cost">Change</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Additional info</th>
+            <td><ul class="list list-bullet">
+                <li>{% if data['additional-info-email'] == 'email' %}Applicant email address{% endif %}</li>
+                <li>{% if data['additional-info-name'] == 'name' %}Applicant name{% endif %}</li>
+                <li>{% if data['additional-info-number'] == 'number' %}Applicant phone number{% endif %}</li>
+            </ul></td>
+            <td><a href="/details-4-additional-info">Change</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Payment types</th>
+            <td><ul class="list list-bullet">
+                <li>{% if data['card-type'] == 'credit-debit' %}Credit and Debit card{% endif %}</li>
+                <li>{% if data['direct-debit'] == 'direct-debit' %}Direct debit{% endif %}</li>
+            </ul></td>
+            <td><a href="/details-5-payment-options">Change</a></td>
+          </tr>
+        </tbody>
+      </table>
 
-            <div class="form-group">
-                <a href="/approval-submitted">
-                    <input class="button" type="submit" value="Save draft and continue">
-                </a>
-            </div>
+      <div class="form-group">
+          <a href="/set-up-payment-2">
+      	     <input class="button" type="submit" value="Save draft and continue">
+    		  </a>  
+  	   </div>
 
-        </div>
     </div>
+  </div>
+  <div class="grid-row">
+    <div class="column-half">
+      <p class="cancel-link"><a href="/set-up-payment">Delete this draft</a></p>
+      <p>You will need to submit this payment link page for approval before it can go live.</p>
+    </div>
+  </div>
 </main>
 
 {% endblock %}
