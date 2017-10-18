@@ -47,18 +47,18 @@
           <tr>
             <th scope="row">Additional info</th>
             <td><ul class="list list-bullet">
-                <li>{% if data['additional-info-email'] == 'email' %}Applicant email address{% endif %}</li>
-                <li>{% if data['additional-info-name'] == 'name' %}Applicant name{% endif %}</li>
-                <li>{% if data['additional-info-number'] == 'number' %}Applicant phone number{% endif %}</li>
-                <li>{% if data['additional-info-another'] == 'another' %}Requested additional field:  {{ data['additional-info-textarea'] }}{% endif %}</li>
+                {% if data['additional-info-email'] == 'email' %}<li>Applicant email address</li>{% endif %}
+                {% if data['additional-info-name'] == 'name' %}<li>Applicant name</li>{% endif %}
+                {% if data['additional-info-number'] == 'number' %}<li>Applicant phone number</li>{% endif %}
+                {% if data['additional-info-another'] == 'another' %}<li>Requested additional field:  {{ data['additional-info-textarea'] }}</li>{% endif %}
             </ul></td>
             <td><a href="/details-4-additional-info">Change</a></td>
           </tr>
           <tr>
             <th scope="row">Payment types</th>
             <td><ul class="list list-bullet">
-                <li>{% if data['card-type'] == 'credit-debit' %}Card payments{% endif %}</li>
-                <li>{% if data['direct-debit'] == 'direct-debit' %}Direct debit{% endif %}</li>
+                {% if data['card-type'] == 'credit-debit' %}<li>Card payments</li>{% endif %}
+                {% if data['direct-debit'] == 'direct-debit' %}<li>Direct debit</li>{% endif %}
             </ul></td>
             <td><a href="/details-5-payment-options">Change</a></td>
           </tr>
