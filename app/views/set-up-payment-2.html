@@ -38,9 +38,9 @@
               <div class="panel panel-border-wide">
                   <p class="bold-small">This is in draft mode.
                       {% if data['sent-for-approval'] == 'true' %}
-                      <a href="">Cancel request.</a>
+                      <a href="">Cancel approval request.</a>
                       {% else %}
-                      <input class="link" type="submit" value="Request approval to go live">
+                      <input class="link link-approval" type="submit" value="Request approval to go live">
                       {% endif %}
                   </p>
               </div>
