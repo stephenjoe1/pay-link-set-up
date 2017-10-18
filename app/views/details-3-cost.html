@@ -15,13 +15,13 @@
             <fieldset>
              <legend>
                 <h1 class="heading-large">
-                  What fee type will you be charging?
+                  Are you charging for a fixed amount?
                 </h1>
               </legend>
 
               <div class="multiple-choice" data-target="charge-type-fixed-amount">
                 <input id="charge-type-fixed" type="radio" name="charge-type" value="Fixed" {% if data['charge-type'] == 'Fixed' %}checked{% endif %}>
-                <label for="charge-type-fixed">Fixed fee</label>
+                <label for="charge-type-fixed">Yes</label>
               </div>
               <div class="panel panel-border-narrow js-hidden" id="charge-type-fixed-amount">
                 <label class="form-label" for="charge-type-fixed-amount">Enter the amount</label>
@@ -35,7 +35,7 @@
 
               <div class="multiple-choice" data-target="contact-by-phone">
                 <input id="example-contact-by-phone" type="radio" name="charge-type" value="Variable" {% if data['charge-type'] == 'Variable' %}checked{% endif %}>
-                <label for="example-contact-by-phone">Variable fee</label>
+                <label for="example-contact-by-phone">No</label>
               </div>
             </fieldset>
           </div>

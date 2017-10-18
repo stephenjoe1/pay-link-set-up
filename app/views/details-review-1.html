@@ -39,7 +39,7 @@
           <tr>
             <th scope="row">Fee</th>
             <td>{% if data['charge-type'] == 'Fixed' %} {{ data['charge-type-fixed-amount'] }} {% endif %}
-                {% if data['charge-type'] == 'Variable' %}Variable fee{% endif %}
+                {% if data['charge-type'] == 'Variable' %}Non fixed amount{% endif %}
                 {% if data['charge-type-multiple-quantities'] == 'true' %}(with quantity counter){% endif %}
             </td>
             <td><a href="/details-3-cost">Change</a></td>
