@@ -39,7 +39,9 @@
           <tr>
             <th scope="row">Fee</th>
             <td>{% if data['charge-type'] == 'Fixed' %} {{ data['charge-type-fixed-amount'] }} {% endif %}
-                {% if data['charge-type'] == 'Variable' %}Variable fee{% endif %}</td>
+                {% if data['charge-type'] == 'Variable' %}Variable fee{% endif %}
+                {% if data['charge-type-multiple-quantities'] == 'true' %}(with quantity counter){% endif %}
+            </td>
             <td><a href="/details-3-cost">Change</a></td>
           </tr>
           <tr>
@@ -48,13 +50,14 @@
                 <li>{% if data['additional-info-email'] == 'email' %}Applicant email address{% endif %}</li>
                 <li>{% if data['additional-info-name'] == 'name' %}Applicant name{% endif %}</li>
                 <li>{% if data['additional-info-number'] == 'number' %}Applicant phone number{% endif %}</li>
+                <li>{% if data['additional-info-another'] == 'another' %}Requested additional field:  {{ data['additional-info-textarea'] }}{% endif %}</li>
             </ul></td>
             <td><a href="/details-4-additional-info">Change</a></td>
           </tr>
           <tr>
             <th scope="row">Payment types</th>
             <td><ul class="list list-bullet">
-                <li>{% if data['card-type'] == 'credit-debit' %}Credit and Debit card{% endif %}</li>
+                <li>{% if data['card-type'] == 'credit-debit' %}Card payments{% endif %}</li>
                 <li>{% if data['direct-debit'] == 'direct-debit' %}Direct debit{% endif %}</li>
             </ul></td>
             <td><a href="/details-5-payment-options">Change</a></td>
