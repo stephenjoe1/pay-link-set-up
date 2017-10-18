@@ -38,7 +38,7 @@
           </tr>
           <tr>
             <th scope="row">Fee</th>
-            <td>{% if data['charge-type'] == 'Fixed' %} {{ data['charge-type'] }} {% endif %}
+            <td>{% if data['charge-type'] == 'Fixed' %} {{ data['charge-type-fixed-amount'] }} {% endif %}
                 {% if data['charge-type'] == 'Variable' %}Variable fee{% endif %}</td>
             <td><a href="/details-3-cost">Change</a></td>
           </tr>

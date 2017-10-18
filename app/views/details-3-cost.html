@@ -28,13 +28,13 @@
                 <input class="form-control" name="charge-type-fixed-amount" type="text" id="contact-email" style="float:left;" value="{{data['charge-type-fixed-amount']}}">
                 
                 <div class="multiple-choice multiple-quantity-checkbox">
-                  <input id="checkbox-multiple-quantities" name="charge-type" type="checkbox" value="true">
+                  <input id="checkbox-multiple-quantities" name="charge-type-multiple-quantities" type="checkbox" value="true" {% if data['charge-type-multiple-quantities'] == 'true' %}checked{% endif %}>
                   <label for="checkbox-multiple-quantities">Allow multiple quantities</label>
                 </div>
               </div>
 
               <div class="multiple-choice" data-target="contact-by-phone">
-                <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="Variable" {% if data['charge-type'] == 'Variable' %}checked{% endif %}>
+                <input id="example-contact-by-phone" type="radio" name="charge-type" value="Variable" {% if data['charge-type'] == 'Variable' %}checked{% endif %}>
                 <label for="example-contact-by-phone">Variable fee</label>
               </div>
             </fieldset>
