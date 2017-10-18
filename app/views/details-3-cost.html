@@ -23,10 +23,18 @@
                 <input id="charge-type-fixed" type="radio" name="charge-type" value="Fixed" {% if data['charge-type'] == 'Fixed' %}checked{% endif %}>
                 <label for="charge-type-fixed">Yes</label>
               </div>
-              <div class="panel panel-border-narrow js-hidden" id="charge-type-fixed-amount">
-                <label class="form-label" for="charge-type-fixed-amount">Enter the amount</label>
-                <input class="form-control" name="charge-type-fixed-amount" type="text" id="contact-email" style="float:left;" value="{{data['charge-type-fixed-amount']}}">
-                
+
+
+
+
+              <div class="panel panel-border-narrow js-hidden currency-input" id="charge-type-fixed-amount">
+                <label class="form-label" for="charge-type-fixed-amount">Enter the amount
+                  <span class="visually-hidden">in &pound;</span>
+                </label>
+                <div class="currency-input__inner">
+                  <span class="currency-input__inner__unit">&pound;</span>
+                  <input class="form-control" name="charge-type-fixed-amount" type="text" id="contact-email" style="float:left;" value="{{data['charge-type-fixed-amount']}}">
+                </div>  
                 <div class="multiple-choice multiple-quantity-checkbox">
                   <input id="checkbox-multiple-quantities" name="charge-type-multiple-quantities" type="checkbox" value="true" {% if data['charge-type-multiple-quantities'] == 'true' %}checked{% endif %}>
                   <label for="checkbox-multiple-quantities">Add a quantity counter (let the user pay for multiple items)</label>
