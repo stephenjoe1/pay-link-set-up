@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+ 
+{% block content %}
+
+<main id="content" role="main">
+<div class="back">
+		<a href="javascript:history.back()" class="link-back">Back</a>
+	</div>
+
+	<h1 class="heading-large">Check vehicle details</h1>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+		<div class="check-details">
+
+		  	<table>
+			    <tbody>
+			      <tr>
+			        <td>Registration number:</td>
+			        <td class="table-info">EK58 UBX</td>
+			      </tr>
+			      <tr>
+			        <td>Vehicle make:</td>
+			        <td class="table-info">FORD</td>
+			      </tr>
+			      <tr>
+			       <td>Tax status:</td>
+			        <td class="table-info">Not taxed – Expired 31 January 2018</td>
+			      </tr>
+			    </tbody>
+	  		</table>	
+		</div>
+			<p>Agree the following:</p>
+			<p class="table-info">DVLA can check that your vehicle has an electronic MOT/GVT certificate (if relevant).</p>
+		</div>
+	</div>
+	 <div class="form-group">
+	 			<a href="renew-car-tax-choose-payment"><button class="button">Agree and continue</button></a>
+	 </div>
+
+
+
+</main>
+
+{% endblock %}

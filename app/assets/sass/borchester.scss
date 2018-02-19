@@ -1,0 +1,406 @@
+body {
+  padding:0;
+  margin: 0;
+  font-family: helvetica, arial;
+} 
+
+div.wrapper {
+  padding-top:1.2rem;
+
+}
+
+div.wrapper.fullscreen {
+  clear: both;
+  font-family: helvetica, arial;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding-top: 20px;
+  width: 960px;
+}
+
+.header, .top-bar, .button, .button:hover, .top-bar.expanded .title-area {
+  background:#7a71ae;
+}
+
+.header {
+  margin: 0;
+  height: auto;
+}
+
+.barcode {
+  padding: 15px;
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.top-bar {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  max-width: 960px;
+}
+
+.top-bar-section ul{
+  width: auto;
+  height: auto;
+  display: inline;
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.top-bar-section ul a{
+  text-decoration: none;
+  color: white;
+}
+
+.top-bar-section li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.payment-summary {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.payment-summary h2 {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.payment-summary td {
+  font-size: 19px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+
+.name h1  {
+  display: block;
+  font-family: helvetica, arial;
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.row {
+  position: relative;
+  clear: both;
+}
+
+.column-all {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 15px;
+}
+
+.column-half {
+  width: 45%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.column-two-thirds {
+  width: 60%;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.column-one-third {
+  width: 30%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+img {
+  width:100%;
+  margin-bottom: 45px;
+}
+
+
+
+.services ul{
+  font-size: 24px;
+  line-height: 35px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.services ul a{
+  text-decoration: none;
+}
+
+.recent-notices ul{
+  font-size: 19px;
+  line-height: 30px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+.recent-notices ul a{
+  text-decoration: none;
+}
+
+ul.small-block-grid-2.services {
+  text-align:center;
+}
+
+
+a, .side-nav li a:not(.button), .side-nav li a:not(.button):hover {
+  color: #7A71AE;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  font-size: 19px;
+  font-family: helvetica;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 60px;
+}
+
+.button:hover {
+  background-color:#3b3b7b;
+}
+
+a:hover {
+  color:#3b3b7b;
+}
+
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.button {
+  font-weight:bold;
+}
+
+.panel h4 {
+  line-height:1.5rem;
+  font-weight:bold;
+}
+
+#news {
+  padding:0;
+}
+
+#news h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+#news p {
+  font-size: 19px;
+  line-height: 25px;
+}
+
+
+
+.footer {
+  position: relative;
+  margin-top: 100px;
+  height: 200px;
+  background-color: #eeeeee;
+  clear: both;
+}
+.footer-white {
+  position: relative;
+  margin-top: 100px;
+  height: 200px;
+  background-color: white;
+  clear: both;
+}
+
+fieldset {
+  border: none;
+  margin-left: 0;
+  padding-left: 0;
+  float: left;
+  display: block;
+}
+
+.form-date {
+  float: left;
+  display: block;
+}
+
+.form-group {
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  }
+
+.form-label-bold {
+  font-weight: 700;
+  font-size: 19px;
+  // float:left;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 0;
+  display: block;
+}
+
+.form-hint {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: gray;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+.form-control {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.3157894737;
+  font-weight: 400;
+  text-transform: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bfc1c3;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.block-label {
+  float: none;
+  display: block;
+  position: relative;
+  background: #dee0e2;
+  border: 1px solid #dee0e2;
+  padding: 18px 30px 15px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.poundsign {
+  display: inline-block;
+}
+
+.logo-paypoint {
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  margin-bottom: 0px;
+}
+
+.radio-nav {
+  clear: both;
+}
+
+// #label-1month {
+//   margin-right: 10px;
+// }
+
+// #label-6months {
+//   margin-right: 10px;
+// }
+
+input {
+  margin: 0em;
+  font: normal normal normal 11px/normal 'Lucida Grande';
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+}
+
+.payment-confirmed {
+  background-color: #28A197;
+  color: white;
+  padding: 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.payment-confirmed h1 {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.payment-confirmed p {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom:15px;
+}
+
+.payment-confirmed h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+
+.tick-icon{
+  width: 50px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+.confirmed-details p{
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.confirmed-details h4 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.finish-and-return{
+  margin-bottom: 100px;
+}
+
+
+
+

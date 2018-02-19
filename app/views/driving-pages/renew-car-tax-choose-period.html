@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+ 
+{% block content %}
+
+
+<main id="content" role="main">
+	<div class="back">
+		<a href="javascript:history.back()" class="link-back">Back</a>
+	</div>
+
+<div class="grid-row">
+	<div class="column-two-thirds">
+	   <form action="direct-debit-payment-monthly-1">
+          <div class="form-group">
+            <fieldset>
+             <legend>
+                <h1 class="heading-large" style="margin-bottom:30px;">
+                  Select a direct debit payment schedule
+                </h1>
+              </legend>
+
+              <div class="multiple-choice">
+		        <input id="radio-1" type="radio" name="radio-group" value="monthly">
+		        <label for="radio-1" class="heading-small">£25.00 — paid monthly <span class="form-hint">This adds up to a total fee of £300.00 every year</span></label>
+		      </div>
+
+		      <div class="multiple-choice">
+		        <input id="radio-2" type="radio" name="radio-group" value="6-monthly">
+		        <label for="radio-3" class="heading-small">£140.00 — paid every 6 months <span class="form-hint">This adds up to a total fee of £280.00 every year</span></label>
+		      </div>
+
+               <div class="multiple-choice">
+		        <input id="radio-3" type="radio" name="radio-group" value="yearly">
+		        <label for="radio-3" class="heading-small">£275.00 — paid yearly</label>
+		      </div>
+       
+            </fieldset>
+          </div> 
+
+          <div class="panel panel-border-wide">
+          <p>The first payment will be taken on the date the Direct Debit mandate is set up. All other payments will be taken on the first day of every month a payment is due.</p>
+          </div>      
+
+	      <div class="form-group">
+	      	     <input class="button" type="submit" value="Continue">
+	  	    <p class="cancel-link"><a href="#">Cancel</a></p>
+	  	   </div>
+        </form>
+
+
+	   </div>
+	    <div class="column-third">
+
+		</div>
+	  </div>
+
+
+
+
+</main>
+
+{% endblock %}
