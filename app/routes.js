@@ -7,17 +7,20 @@ router.get('/', function (req, res) {
 })
 
 // add your routes here
-router.get('/direct-debit-payment', function (req, res) {
+router.get('/pick-plan-type', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
   var radiogroup = req.query.radiogroup
 
-  if (radiogroup === 'card-payment') {
+  if (radiogroup === 'direct-debit-payment-monthly-1') {
     // redirect to the relevant page
-    res.redirect('/card-payment')
+    res.redirect('/driving-pages/direct-debit-payment-monthly-1')
   } else {
     // if over18 is any other value (or is missing) render the page requested
-    res.redirect('/direct-debit-payment-1')
-  }
+    res.redirect('/driving-pages/direct-debit-payment-yearly-1')
+  } 
 })
 
+
 module.exports = router
+
+
