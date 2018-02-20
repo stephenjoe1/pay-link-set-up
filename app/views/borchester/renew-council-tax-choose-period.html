@@ -1,0 +1,67 @@
+{% extends "layout2.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+ 
+{% block content %}
+ 
+
+<main id="content" role="main">
+	<div class="back">
+		<a href="javascript:history.back()" class="link-back">Back</a>
+	</div>
+
+<div class="grid-row">
+	<div class="column-two-thirds">
+	   
+	   <form action="/pick-plan-type">
+          <div class="form-group">
+            <fieldset>
+             <legend>
+                <h1 class="heading-large" style="margin-bottom:60px;">
+                  Select a Direct Debit payment plan
+                </h1>
+              </legend>
+
+              <div class="multiple-choice">
+		        <input id="direct-debit-payment-monthly-1" type="radio" name="radiogroup" value="direct-debit-payment-monthly-1">
+		        <label for="direct-debit-payment-monthly-1" class="heading-small">£100.00 — paid monthly <span class="form-hint">This adds up to a total fee of £1,200.00 every year</span></label>
+		      </div>
+
+		      <div class="multiple-choice">
+		        <input id="direct-debit-payment-6monthly-1" type="radio" name="radiogroup" value="direct-debit-payment-6monthly-1">
+		        <label for="direct-debit-payment-6monthly-1" class="heading-small">£600.00 — paid every 6 months <span class="form-hint">This adds up to a total fee of £1,200.00 every year</span></label>
+		      </div>
+
+               <div class="multiple-choice">
+		        <input id="direct-debit-payment-yearly-1" type="radio" name="radiogroup" value="direct-debit-payment-yearly-1">
+		        <label for="direct-debit-payment-yearly-1" class="heading-small">£1,200.00 — paid yearly</label>
+		      </div>
+       
+            </fieldset>
+          </div> 
+
+          <div class="panel panel-border-wide">
+          <p>Each plan will be automatically renewed every 12 months unless it’s cancelled by you.</p>
+          </div>      
+
+	      <div class="form-group">
+	      	     <input class="button" type="submit" value="Continue">
+	  	    <p><a href="#">Cancel</a></p>
+	  	   </div>
+        </form>
+
+
+	   </div>
+	    <div class="column-third">
+
+		</div>
+	  </div>
+
+
+
+
+</main>
+
+{% endblock %}

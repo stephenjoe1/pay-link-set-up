@@ -1,44 +1,19 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/static/images/icon.png" />
+{% extends "layout2.html" %}
 
-    <title>Welcome | Borchester City Council</title>
-    <!-- <link rel="stylesheet" href="/static/vendor/roboto-slab-fontface/roboto-slab-fontface.css">
-    <link rel="stylesheet" href="/static/vendor/foundation/css/foundation.css">
-    <link rel="stylesheet" href="/static/vendor/fontawesome/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="/public/stylesheets/borchester.css">
-    
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+ 
+{% block content %}
+ 
 
-  </head>
-  <body>
-    <div class="header">
-      <nav class="top-bar">
-          <div class="name">
-            <h1> Borchester City Council </h1>
-          </div>
-        <section class="top-bar-section">
-          <ul>
-            <li><a href="#">Services</a></li>
-            <li><a href="/notices">Notices</a></li>
-            <li><a href="#">Votes and debates</a></li>
-            <li><a href="#">Your councillors</a></li>
-            <li><a href="#">Buses and trams</a></li>
-            <li><a href="#">Data</a></li>
-          </ul>
-        </section>
-      </nav>
-    </div>
-
-<div class="wrapper fullscreen">
+<main id="content" role="main">
 <div class="back">
-		<a href="javascript:history.back()">&#9664; Back</a>
-	</div>
+    <a href="javascript:history.back()" class="link-back">Back</a>
+  </div>
 
 		<div class="payment-summary">
-			<h2>Payment summary</h2>
+			<h1 class="heading-large" style="margin-bottom:30px; margin-top:60px;">Council Tax payment summary</h1>
 				<table>
 			    <thead>
 			      <!-- <tr>
@@ -46,13 +21,17 @@
 			      </tr> -->
 			    </thead>
 			    <tbody>
+            <tr>
+              <td>Property address:</td>
+              <td>10 Hemberton Road, Borchester, SW4 9LG</td>
+            </tr>
 			      <tr>
 			        <td>Payment of:</td>
-			        <td>Council tax to Borchester City Council</td>
+			        <td>Band E Council tax to Borchester City Council</td>
 			      </tr>
 			      <tr>
 			        <td>Amount to pay:</td>
-			        <td>£121.00</td>
+			        <td>£1,200.00 per year</td>
 			      </tr>
 			    </tbody>
 			  </table>
@@ -60,16 +39,10 @@
 
 
 	 <div class="form-group">
-	 			<a href="borchester-council-tax-choose-payment"><button class="button">Proceed to payment</button></a>
+	 			<a href="renew-council-tax-choose-payment"><button class="button">Proceed to payment options</button></a>
 	 </div>
 </div>
-
-
-
-
-<div class="footer">
         
-      </div>
-</body>
+</main>
 
-</html>
+{% endblock %}
