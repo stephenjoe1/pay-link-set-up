@@ -76,51 +76,11 @@
 			  </div>
 			</form>
 
-
-
-
-	 <div class="form-group">
-      <h2 class="heading-medium billing-address-label">Billing address</h2>
-      <div class="payment-type-intro">
-        <p>This is the address associated with the account</p>
-        </div>
-        <div class="form-group">
-                    <label class="form-label-bold" for="country">
-                        Country
-                    </label>
-                    <div class="dropdown">
-                        <select name="select" class="form-control dropdown-list" id="full-name">
-                            <option value="value1" selected>United Kingdom</option>
-                            <!-- <option value="value1">Other countries</option> -->
-                        </select>
-                    </div>
-            </div>
-
-			<div class="form-group">
-				<label class="form-label-bold" for="building-and-street">
-			    Building and street
-			  	</label>
-			  	<input class="form-control" id="building-and-street" type="text">
-			  	<input class="form-control" id="building-and-street" type="text">
-			</div>
-			<div class="form-group">
-				<label class="form-label-bold" for="town-or-city">
-			    Town or city
-			  	</label>
-			  	<input class="form-control" id="town-or-city" type="text">
-			</div>
-			<div class="form-group">
-				<label class="form-label-bold" for="postcode">
-			    Postcode
-			  	</label>
-			  	<input class="form-control" id="postcode" type="text">
-			</div>
 			<div class="form-group">
 				<label class="form-label-bold" for="email-address">Email address<span class="form-hint">We need this to confirm the Direct Debit with you</span>
 			  	</label>
 			  	<input class="form-control" id="email-address" type="text">
 			</div>
-		</div>
 
 			<div class="form-group">
 		 			<a href="direct-debit-payment-monthly-2"><button class="button">Continue</button></a>
@@ -135,15 +95,19 @@
 
 
 	<div class="column-third">
-
-			<div class="payment-summary-small">
+		<div class="payment-summary-small">
 				<h2>Payment summary</h2>
 			      <p class="payment-info">Vehicle Tax – paid monthly</p>
 			       <h3>Amount:</h3>
 			       <p class="payment-amount"> £25.00 <span class="font-xsmall">per month</span></p>
-			       <div>
-			       	<p class="font-xsmall">The first payment will be taken on the date the Direct Debit mandate is set up. All other payments will be taken on the first day of each month a payment is due.</p>
-			       </div>
+
+
+			<details>
+			 <summary><span class="summary font-xsmall">When will payments be taken</span></summary>
+				  <div class="panel panel-border-narrow">
+				    <p class="font-xsmall">The first payment will be taken on the date the Direct Debit mandate is set up. All other payments will be taken on the first day of each month a payment is due.</p>
+				  </div>
+				</details>
 			</div>
 	</div>
 </div>
