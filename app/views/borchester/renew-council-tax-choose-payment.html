@@ -8,9 +8,8 @@ GOV.UK prototype kit
 
 
 <main id="content" role="main">
-
 	<div class="back">
-		<a href="javascript:history.back()" class="link-back">Back</a>
+		<a href="borchester-council-tax" class="link-back">Back</a>
 	</div>
 
 <div class="grid-row">
@@ -18,31 +17,34 @@ GOV.UK prototype kit
 	   
 
 
-	   <form action="renew-council-tax-choose-period">
+	   <form action="/borchester-pick-payment-type">
           <div class="form-group">
             <fieldset>
              <legend>
                 <h1 class="heading-large" style="margin-bottom:60px;">
-                  How do you want to pay?
+                  How do you want to pay for your council tax?
                 </h1>
               </legend>
 
-               <div class="multiple-choice">
-		        <input id="radio-2" type="radio" name="radio-group" value="direct debit">
-		        <label for="radio-2" class="heading-small">Direct Debit <span class="form-hint">Choose between different recurring payment plans</span></label>
+		      <div class="multiple-choice">
+		        <input id="renew-council-tax-choose-period" type="radio" name="radiogroup" value="renew-council-tax-choose-period">
+		        <label for="renew-council-tax-choose-period" class="heading-small">Direct Debit <span class="form-hint">Choose between different recurring payment plans such as monthly or yearly</span></label>
 		      </div>
 
               <div class="multiple-choice">
-		        <input id="radio-1" type="radio" name="radio-group" value="credit or debit card">
-		        <label for="radio-1" class="heading-small">Credit or debit card <span class="form-hint">Pay a one-off fee</span></label>
+		        <input id="renew-council-tax-card-summary" type="radio" name="radiogroup" value="renew-council-tax-card-summary">
+		        <label for="renew-council-tax-card-summary" class="heading-small">Credit or debit card <span class="form-hint">Pay a one-off fee for the year – you can't use card to do recurring payments</span></label>
 		      </div>
+
+
+
        
             </fieldset>
           </div>       
 
 	      <div class="form-group">
 	      	     <input class="button" type="submit" value="Continue">
-	  	    <p><a href="#">Cancel</a></p>
+	  	    <p style="margin-top:30px;"><a href="borchester-council-tax">Cancel</a></p>
 	  	   </div>
         </form>
         
@@ -51,7 +53,7 @@ GOV.UK prototype kit
 	    <div class="column-third">
 
 		</div>
-	  </div>
+	 </div>
 
 
 </main>

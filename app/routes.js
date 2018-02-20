@@ -38,6 +38,37 @@ router.get('/pick-payment-type', function (req, res) {
   }  
 })
 
+// add your routes here
+router.get('/borchester-pick-payment-type', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var radiogroup = req.query.radiogroup
+
+  if (radiogroup === 'renew-council-tax-choose-period') {
+    // redirect to the relevant page
+    res.redirect('/borchester/renew-council-tax-choose-period')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.redirect('/borchester/renew-council-tax-card-summary')
+  }  
+})
+
+// add your routes here
+router.get('/borchester-pick-plan-type', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var radiogroup = req.query.radiogroup
+
+  if (radiogroup === 'borchester-direct-debit-payment-monthly-1') {
+    // redirect to the relevant page
+    res.redirect('/borchester/borchester-direct-debit-payment-monthly-1')
+  } else if (radiogroup === 'borchester-direct-debit-payment-6monthly-1'){
+    // if over18 is any other value (or is missing) render the page requested
+    res.redirect('/borchester/borchester-direct-debit-payment-6monthly-1')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.redirect('/borchester/borchester-direct-debit-payment-yearly-1')
+  }  
+})
+
 
 module.exports = router
 
