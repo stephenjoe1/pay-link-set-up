@@ -1,0 +1,54 @@
+{% extends "layout-2.html" %}
+
+{% block page_title %}
+  GOV.UK payment page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+
+    	<div class="payment-confirmed">
+			<h1 class="heading-medium"><img src="/public/images/tick-icon.png">Payment successful</h1>
+			 <h2>Reference number:</h2>
+			 <p>CT147877</p>
+		</div>
+		<div class="email-copy" style="margin-top:30px;">
+			<p class="heading-small">We’ve emailed you a payment receipt.</p> 
+		</div>
+
+			<h2 class="heading-medium">Your payment summary</h2>
+			<table>
+			    <thead>
+			      <tr>
+			        <th></th>
+			        <th></th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Payment of:</td>
+			        <td>Vehicle Tax for 12 months from 01 February 2018 to 01 February 2019</td>
+			      </tr>
+			      <tr>
+			        <td>Payment amount:</td>
+			        <td> £300.00</td>
+			      </tr>
+			    </tbody>
+
+			  </table>
+
+			 <div class="panel panel-border-wide" style="margin-top:30px;">
+			  <p>Your will need to renew your vehicle tax before 01 February 2019.</p>
+			 </div>
+		</div>
+	</div>
+
+
+</main>
+
+{% endblock %}
