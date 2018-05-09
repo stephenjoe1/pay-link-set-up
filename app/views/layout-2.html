@@ -16,20 +16,6 @@
 {% include "includes/header-govuk-pay-2.html" %}
   {% include "includes/propositional_navigation.html" %}
 
-  <!-- <div class="header-proposition">
-    <div class="content">
-      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-      <nav id="proposition-menu">
-        <a href="/" id="proposition-name">
-          {# Set serviceName in config.js. Use a block to override on a page. #}
-          {% block service_name %}
-            {% if serviceName %} {{ serviceName }} {% endif %}
-          {% endblock %}
-        </a>
-      </nav>
-    </div>
-  </div> -->
-
 {% endblock %}
  
 {% block header_class %}
@@ -37,6 +23,14 @@
 {% endblock %}
 
 {% block footer_support_links %}
+
+      <ul>
+        <li>Service provided by Government Digital Service</li>
+        <li>10 Whitechapel High Street,
+            London E1 8QS United Kingdom</li><br>
+        <li class="merchant-details">Phone: 0208 000 000</li>
+        <li>Email: example@email.com</li>
+      </ul>
   {% if useAutoStoreData %}
     <ul>
       <li>
