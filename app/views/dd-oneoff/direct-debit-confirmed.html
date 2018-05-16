@@ -1,0 +1,50 @@
+{% extends "layout-2.html" %}
+
+{% block page_title %}
+  GOV.UK payment page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+
+		<div class="grid-row">
+    		<div class="column-two-thirds">
+    		<div class="payment-confirmed">
+			<h1 class="heading-medium"><img src="/public/images/tick-icon.png">Direct Debit payment successful</h1>
+			 <h2>Mandate reference number:</h2>
+			 <p>147836</p>
+		</div>
+			<p class="mt5">We’ve emailed you a payment receipt. Your permit will arrive by post in the next 5 working days.</p>
+			<table>
+			    <thead>
+			      <tr>
+			        <th colspan="2">Your purchase details</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Payment for:</td>
+			        <td>Example payment description</td>
+			      </tr>
+			      <tr>
+			        <td>Total amount:</td>
+			        <td> £31.00</td>
+			      </tr>
+			    </tbody>
+
+			  </table>
+		</div>
+		</div>
+
+<!-- 
+	 <div class="form-group" style="margin-top: 30px;">
+			 <a href="#"><button class="button">Finish</button></a>
+	</div> -->
+
+
+
+</main>
+
+{% endblock %}
