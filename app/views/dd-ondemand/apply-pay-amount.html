@@ -1,0 +1,47 @@
+{% extends "layout-2.html" %}
+
+{% block page_title %}
+  GOV.UK payment page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<div class="back">
+		<a href="apply-user-details" class="link-back">Back</a>
+	</div>
+
+<div class="grid-row">
+	<div class="column-two-thirds">
+	  	<h1 class="heading-large">Make your payment</h1>
+
+	  	<p>The cost for a permit is: <br> <span class="heading-large">£31</span></p>
+	  	<p>To pay using a one-off Direct Debit payment you’ll need to have the following bank details ready:</p>
+	  	<ul class="list-bullet">
+	  	<li>Account number</li>
+	  	<li>Sort code</li>
+	  	<li>Name on account</li>
+	  	</ul>
+	  	<p style="margin-top:15px;">If more than one person is required to authorise Direct Debits on the bank account you can't proceed with this online payment method. You should use a <a href="other-ways-to-pay">different payment method</a>.</p>
+
+	  	<div class="form-group" style="margin-top:30px;">
+		 			<a class="button" href="direct-debit-payment-1">Continue with Direct Debit payment</a>
+		 	</div>
+
+	</div>
+
+	<div class="column-third">
+
+			<div class="payment-summary-small">
+				<h2>Payment summary</h2>
+			      <p class="payment-info">Lock and Weir Fishing Permit – River Thames</p>
+			       <h3>Total amount:</h3>
+			       <p class="payment-amount"> £31.00</p>
+			</div>
+	</div>
+</div>
+
+</main>
+
+{% endblock %}
