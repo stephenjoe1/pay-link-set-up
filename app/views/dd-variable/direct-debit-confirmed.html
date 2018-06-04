@@ -1,0 +1,50 @@
+{% extends "layout-2.html" %}
+
+{% block page_title %}
+  GOV.UK payment page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+
+		<div class="grid-row">
+    		<div class="column-two-thirds">
+    		<div class="payment-confirmed">
+			<h1 class="heading-medium"><img src="/public/images/tick-icon.png">Direct Debit setup successful</h1>
+			 <h2>Mandate reference number:</h2>
+			 <p>147836</p>
+		</div>
+			<p class="mt5">We will email you a confirmation with your mandate reference number. You will be notified by email 3 days before each future payment.</p>
+			<table>
+			    <thead>
+			      <tr>
+			        <th colspan="2">Your purchase details</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Payment for:</td>
+			        <td>Direct debit for Dartford Crossing</td>
+			      </tr>
+			      <tr>
+			        <td>Total amount:</td>
+			        <td>£2.50 for each journey, collected monthly</td>
+			      </tr>
+			    </tbody>
+
+			  </table>
+		</div>
+		</div>
+
+<!-- 
+	 <div class="form-group" style="margin-top: 30px;">
+			 <a href="#"><button class="button">Finish</button></a>
+	</div> -->
+
+
+
+</main>
+
+{% endblock %}
