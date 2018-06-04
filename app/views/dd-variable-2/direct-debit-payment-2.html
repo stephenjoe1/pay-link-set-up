@@ -1,0 +1,76 @@
+{% extends "layout-2.html" %}
+
+{% block page_title %}
+  GOV.UK payment page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+<div class="back">
+		<a href="direct-debit-payment-1" class="link-back">Back</a>
+	</div>
+
+
+<div class="grid-row">
+
+    <div class="column-two-thirds">
+	  <h1 class="heading-large">Check your details are correct</h1>
+	  
+	  <div class="check-details">
+	  	<table>
+		    <tbody>
+		      <tr>
+		        <td>Name on the account:</td>
+		        <td class="table-info">Alex Smith</td>
+		      </tr>
+		      <tr>
+		       <td>Sort code:</td>
+		        <td class="table-info">400500</td>
+		      </tr>
+		      <tr>
+		        <td>Account number:</td>
+		        <td class="table-info">12345678</td>
+		      </tr>
+		    </tbody>
+  		</table>	
+		</div>
+		<div class="panel panel-border-wide">
+				<p>We will notify you by email 3 days before each future payment.</p>
+		</div>
+
+			<div class="form-group">
+			 			<a href="direct-debit-confirmed"><button class="button">Confirm mandate</button></a>
+			 </div>
+			 <div class="back">
+					<a href="apply-start">Cancel mandate</a>
+			</div>
+	</div>
+
+		 <!-- <div class="column-third">
+			<div class="payment-summary-small">
+				<h2>Payment summary</h2>
+			      <p class="payment-info">Dartford Charge crossing</p>
+			      <h3>Total amount:</h3>
+			      <p class="payment-info mv0">Variable</p> 
+			      
+			</div>
+		</div> -->
+</div>
+
+
+
+	<div class="grid-row">
+	    <div class="column-two-thirds">
+	    <div class="dd-terms-conditions">
+		 <div class="dd-images"><img src="/public/images/directdebit.png">
+			 <p>Your payments are protected by the <a href="direct-debit-guarantee">Direct Debit guarantee</a>.</p>
+		 </div>
+		</div>
+	 </div>
+	</div>
+
+</main>
+
+{% endblock %}
